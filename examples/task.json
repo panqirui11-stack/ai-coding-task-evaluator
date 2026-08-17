@@ -1,0 +1,28 @@
+{
+  "id": "sum-positive-v1",
+  "title": "实现正整数求和",
+  "timeout_seconds": 3,
+  "checks": [
+    {
+      "name": "basic_case",
+      "command": ["python", "solution.py", "1", "2", "3"],
+      "expected_exit_code": 0,
+      "stdout_equals": "6",
+      "weight": 50
+    },
+    {
+      "name": "single_value",
+      "command": ["python", "solution.py", "9"],
+      "expected_exit_code": 0,
+      "stdout_equals": "9",
+      "weight": 20
+    },
+    {
+      "name": "empty_input",
+      "command": ["python", "solution.py"],
+      "expected_exit_code": 0,
+      "stdout_equals": "0",
+      "weight": 30
+    }
+  ]
+}
