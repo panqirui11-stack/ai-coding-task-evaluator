@@ -13,6 +13,7 @@ AI Coding 任务不仅要判断代码能否运行，还要保证评测规则可�
 ## 快速开始
 
 ```bash
+python -m pip install -e .
 python -m ai_task_evaluator.cli examples/task.json examples/submission
 ```
 
@@ -51,7 +52,7 @@ python -m unittest discover -s tests -v
 
 - Python 标准库实现，无第三方运行时依赖；
 - 规范校验、超时控制、输出截断和确定性计分；
-- 单元测试覆盖通过、输出不匹配、非零退出和超时场景；
+- 单元测试覆盖规范校验、输出不匹配、非零退出等场景；
 - 清晰区分评测结果与基础设施错误。
 
 ## 仓库标签建议
